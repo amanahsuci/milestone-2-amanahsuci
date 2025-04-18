@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- GAME AREA -->
+     <div id="gameContainer">
+        <h1 id="rpsGame">Rock Paper Scissors Game</h1>
+        <h2 id="roundScore">Round: 0</h2><h2>Score: 0</h2>
+    </div>
+    <div id="handArea">
+        <div id="playerHand">
+                <img src="rps_game_pic/rock.jpg" alt="playerChoice" class="left-hand">
+        </div>
+        <div id="computerHand">
+            <img src="rps_game_pic/rock.jpg" alt="computerChoice" class="right-hand">
+        </div>
+    </div>
+    <div id="gameArea">
+        <div id="choicesDisplay" class="choicesDisplay"></div>
+        <div id="playerChoiceBtn">
+            <button id="rockBtn">Rock</button>
+            <button id="paperBtn">Paper</button>
+            <button id="scissorsBtn">Scissors</button>
+        </div>
+    </div>
+    <div>
+        <div id="buttonArea">
+            <button id="restartBtn">Restart Game</button>
+            <button id="stopBtn">Stop Game</button>
+            <button id="backToHomeBtn">Back to Home</button>
+        </div>
+    </div>
+    <section class="footer">
+        <p>Copyright &copy; 2025 playgamedulzz.inc</p>
+        <p>All rights reserved.</p>
+    </section>
+    <script src="rps_game.js" defer></script>
+</body>
+</html>

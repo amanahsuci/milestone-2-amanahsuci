@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_page_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="brand"><i class="fas fa-gamepad"></i>playgamedulzz.inc</span>
+          </div>
+          <div class="navbar-right">
+            <a href="home_page_game.html" class="nav-btn"><i class="fas fa-home"></i> Home</a>
+            <a href="#play_area" class="nav-btn"><i class="fas fa-play"></i> Play</a>
+          </div>
+        </div>
+    </nav>
+    <section class="opening">
+        <h2>Welcome to <i class="fas fa-gamepad"></i> playgamedulzz.inc!</h2>
+        <p>We are playgamedulzz.inc, a start up game company</p>
+        <p>that run and part of amanahsuci.co.ltd. Let's get some fun!</p>
+        <p>Choose your game!</p>
+    </section>  
+    <section class="play_area">
+        <div id="box-container">
+            <div class="box1">
+                <img src="cover_pic/cover_number_game.png" alt="cover_number_game">
+                <a href="number_game_page"><h4>Guessing Number Game</h4></a>
+            </div>
+            <div class="box2">
+                <img src="cover_pic/rps_cover.jpg" alt="rps_cover">
+                <a href="rps_game"><h4>Rock, Paper and Scissors Game</h4></a>
+            </div>
+            <div class="box3">
+                <img src="cover_pic/memory-card-cover.jpg" alt="memory-card-cover">                
+                <a href="card_game_page.html"><h4>Memory Card Game</h4></a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>Copyright &copy; 2025 playgamedulzz.inc</p>
+        <p>All rights reserved.</p>
+    </section>
+    <script>
+        document.getElementById('startBtn').addEventListener('click', function () {
+        window.location.href = 'card_game_page.html';
+        window.location.href = 'number_game_page';
+        window.location.href = 'rps_game';
+        });
+    </script> 
+</body>
+</html>
