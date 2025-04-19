@@ -2,7 +2,7 @@
 
 ## Milestone-2 
 
-### 🎮 Game Page by playgamedulzz.inc
+### 🎮 Game Page by revofun.inc
 
 #### Welcome to playgamedulzz.inc Game Page by **Amanah Suci**. An interactive game page which can fill your free time. This page has 3 game that you can play!
 
