@@ -1,0 +1,166 @@
+body {
+    background-image: url('../assets/background_pic/game_background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Bytesized", sans-serif;
+    text-align: center;
+}
+
+#gameContainer {
+    color: #FFB26F;
+}
+
+#rpsGame {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#roundScore {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#handArea {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 20px;
+    position: relative;
+}
+
+#playerHand, #computerHand {
+    flex: 1;
+    max-width: 300px;
+}
+
+#playerHand img,
+#computerHand img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.left-hand {
+    transform: scaleX(-1);
+}
+
+.left-hand.shake {
+    animation: shake 0.6s ease-in-out;
+}
+
+.right-hand.shake {
+    animation: shake 0.6s ease-in-out;
+}
+
+@keyframes shake-left {
+    0% { transform: scaleX(-1) translateY(0); }
+    25% { transform: scaleX(-1) translateY(-10px); }
+    50% { transform: scaleX(-1) translateY(10px); }
+    75% { transform: scaleX(-1) translateY(-10px); }
+    100% { transform: scaleX(-1) translateY(0); }
+}
+
+@keyframes shake-right {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    75% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+#choicesDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.player-choice,
+.computer-choice {
+    width: 100px;
+    height: 100px;
+}
+
+.result-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ffffcc;
+    font-weight: bold;
+}
+#playerChoiceBtn {
+    margin-top: 20px;
+}
+
+#playerChoiceBtn button,
+#buttonArea button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: "Bytesized", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background-color: #8E7DBE;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#playerChoiceBtn button:hover {
+    background-color: #624E88;
+}
+
+#buttonArea button:hover {
+    background-color: #624E88;
+    animation: slowBounce 1.5s ease-in-out infinite;
+}
+
+@keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
+
+.footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8E7DBE;
+    padding: 12px 24px;
+    color: #333;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 10px;
+    }
+    #rpsGame {
+        font-size: 2em;
+    }
+    #roundScore {
+        font-size: 1.2em;
+    }
+    .footer {
+        display: inline-block;
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+}

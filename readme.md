@@ -35,8 +35,22 @@
 - CSS for styling the web
 - Javascript for interactive games
 
+## Project Structure
+
+```
+milestone-2-amanahsuci/
+├── index.html              # Entry point (redirects to home)
+├── home/                   # Home page
+├── number_game/            # Guessing number game
+├── rps_game/               # Rock paper scissors game
+├── card_game/              # Memory card game
+└── assets/                 # Images (cover, background, game assets)
+```
+
 ## How to Run 
 1. Clone the repository below :
+https://github.com/amanahsuci/milestone-2-amanahsuci.git
 
-2. Open ' home_page_game.html ' 
+2. Open `index.html` in your browser (or `home/home_page_game.html`)
+
 3. Play the game!

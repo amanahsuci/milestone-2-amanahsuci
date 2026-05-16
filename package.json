@@ -1,0 +1,25 @@
+{
+  "name": "milestone-2-amanahsuci",
+  "version": "1.0.0",
+  "description": "## Milestone-2",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanahsuci/milestone-2-amanahsuci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanahsuci/milestone-2-amanahsuci/issues"
+  },
+  "homepage": "https://github.com/amanahsuci/milestone-2-amanahsuci#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('../assets/background_pic/game_background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 80%;                
+  margin: 0 auto;            
+  padding: 20px;
+  font-family: "Bytesized", sans-serif;
+  font-style: normal;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8E7DBE;
+  padding: 12px 24px;
+}
+  
+.navbar-left, .brand {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+}
+  
+.navbar-right, .nav-btn {
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+  
+.navbar-right, .nav-btn:hover {
+  color: #f39c12;
+}
+  
+.navbar i {
+  margin-right: 6px;
+}
+
+#homePage { 
+  height: 50vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.opening {
+  align-items: left;
+  color: #FFB26F;
+}
+
+h2 {
+  margin-top: 90px;
+  color: #FFB26F;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+p {
+  color: #FFB26F;
+  font-size: 20px;;
+}
+
+h1 {
+  color: #F8F4E1;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#box-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box1, .box2, .box3 {
+  width: 300px;            
+  height: 400px; 
+  position: relative;           
+  border: 3px solid #693382;
+  border-radius: 5px;       
+  display: flex;           
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;  
+  margin-top: 10px;   
+  padding: 30px;
+  background-color: #8E7DBE;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(1, 1, 1, 1); 
+}
+
+img {
+  width: 100%;                  
+  height: 90%;                 
+  object-fit: cover; 
+}
+
+h4 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.box1:hover, .box2:hover, .box3:hover {
+  background-color: #624E88;
+  box-shadow: 0 0 8px 3px rgba(226, 175, 228, 0.2);
+  transition: background-color 0.3s ease;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8E7DBE;
+  padding: 12px 24px; 
+  font-size: 28px;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar, .footer {
+    display: inline-block;
+  }
+  .navbar-left, .brand, .footer {
+    font-size: 24px;
+  }
+  .opening {
+    font-size: 20px;
+  }
+  #box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1, .box2, .box3 {
+    width: 200px;            
+    height: 300px; 
+    margin-top: 10px;   
+    padding: 16px;
+    object-fit: cover;
+    overflow: hidden ;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-left, .brand {
+    font-size: 20px;
+  }
+  .navbar-right, .nav-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .box1, .box2, .box3 {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .box1, .box2, .box3 {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    object-fit: cover;
+  }
+}
